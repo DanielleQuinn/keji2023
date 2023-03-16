@@ -176,8 +176,7 @@ library(dplyr)
 
 
 # ---- Capstone ----
-# 1. Complete the Capstone 2 exercise from the previous lesson
-# 2. Use the resulting table to reproduce the figure called myfigure.png
+
 
 
 # Tip: Make a list of what needs to be done and tackle ONE thing at a time.
