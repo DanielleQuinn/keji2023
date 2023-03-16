@@ -231,9 +231,6 @@ plot3 + facet_grid(site~habitat)
 plot3 + facet_grid(habitat~site)
 
 # ---- Capstone ----
-# 1. Complete the Capstone 2 exercise from the previous lesson
-# 2. Use the resulting table to reproduce the figure called myfigure.png
-
 plotme <- fish %>%
   filter(common_name == "Central Stoneroller") %>%
   group_by(year, site, habitat) %>%
