@@ -176,8 +176,13 @@ library(dplyr)
 
 
 # ---- Capstone ----
-
-
+plotme <- fish %>%
+  filter(common_name == "Central Stoneroller") %>%
+  group_by(year, site, habitat) %>%
+  summarise(catch_average = mean(catch),
+            catch_minimum = min(catch),
+            catch_maximum = max(catch)) %>%
+  filter(habitat == "pool", between(year, 1999, 2012))
 
 # Tip: Make a list of what needs to be done and tackle ONE thing at a time.
 # Here is a list of things you'll need to do
